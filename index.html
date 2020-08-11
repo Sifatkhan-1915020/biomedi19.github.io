@@ -1,11 +1,12 @@
 <html>
  <head>
  <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap" rel="stylesheet">
    <title>BIOMEDICAL ENGINEERING </title>
    <style>
     
           html { 
-  background: url(bg.jpg) no-repeat 
+  background: url(bggr.jfif) no-repeat 
     center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,44 +19,64 @@
      h1  {
 	      text-shadow:green 1px 3px;
 	      animation :color 10s linear 0s infinite alternate;
+		   font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+           font-stretch: expanded;
+		   
          }
 		 
-	a:hover {
-	      background-color:white;
-		  box-shadow:-10px 0px 10px  blue,0px -10px 10px  blue,0px 10px 10px  blue,10px 0px 10px  blue;
-	      
-		  }
-    #nava {
-	      position:relative;
-		  left:700px;
-		  height:400px;
-		  width:200px;
-		  border:2px solid white;
-		  color:black;
-		  top:50px;
-		  display:block;
+	
 		  
-	      }
-		  *{
-		   padding:0;
-		   margin:0;
-		   text-decoration:none;
-		   list-style:none;
-		   box-sizing:border-box;
+		  * {
+		       margin:0 px;
+			   padding:0 px;
+			   box-sizing:border-box;
+			}
 		 
+		 nav {
+		   display:flex;
+		   justify-content:space-around;
+		   align-items:center;
+		   min-height:8vh;
+		   background-color:#45B8AC;
+		   font-family: 'Lemonada', cursive;
+		   height:50px;
 		   }
-		  
-		  li  {
-		    height:50px;
-			width:200px;
-			border:2px solid black;
-			font-size:30px;
-			text-align:center;
-		    background-color:rgba(444,544,0,0.70);
-	        
+		   
+		   #logo {
+		     color:white;
+			 text-transform:uppercase;
+			 letter-spacing:5px;
+			 font-size:30px;
+			 }
+		   
+		   #link {
+		     display:flex;
+			 list-style:none;
+			 justify-content:space-around;
+			 width:40%;
+			 }
+		    #link li {
+               list-style:none;
+			   text-weight:bold;
+			   font-size:16px;
+			   color:white;
+			  
+			     }
+		   #link a {
+			   color:white;
+			   text-decoration:none;
+			   letter-spacing:3px;
+			   }
+		   
+		   
+		  #bar div {
+		    height:25px
+			width:5px;
+			background-color:rgb(226,226,226);
+			margin:5px;
 			
 			}
-		  
+		 
    @keyframes color {
         
         
@@ -69,26 +90,63 @@
  </head>
   
   <body >
-    <h1 align="center"  style="border:5px solid blue;height:200px; width:390px;position:fixed;left:150px;top:200px;border-radius:20px;color:green;opacity:1.00;background-color: rgba(0,0,0,0.75);font-size:50px;"><b>Department Biomedical Engineering-2k19</b></h1>
+   <nav>
+	 
+	    <div id="logo">
+		 <h4>Menu</h4>
+		 </div>
+		 
+	 <ul id="link">
+	 
+		<li style="position:relative;left:-65px;"> <a href="home.html"><b>Home</b></a>
+		</li>
+		
+		<li style="position:relative;left:-50px;"  ><a href="Physics.html"><b>Physics</b></a>
+		</li>
+		
+		<li style="position:relative;left:-35px;" ><a href="Chemistry.html"><b>Chemistry</b></a>
+		</li>
+		
+		<li style="position:relative;left:-20px;"><a href="bme.html"><b>Biomedical</b></a>
+		</li>
+		
+		<li style="position:relative;left:-10 px;" ><a href="EEE.html"><b>EEE</b></a>
+		</li>
+		
+		<li style="position:relative;left:20px;" > <a href="Mecha.html"><b>MechaDrawing</b></a>
+		</li>
+		
+		<li style="position:relative;left:40px;" > <a href="Math.html"><b>Math</b></a>
+		</li>
+	 
+	 </ul>
+	 
+	 
+	  <div id="bar">
+	 
+	    <div id="bar1"></div>
+	    <div id="bar2"></div>
+	    <div id="bar3"></div>
+	 
+	  </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 </nav>
+	
+    <h1 align="center"  style="height:200px; width:550px;position:fixed;left:150px;top:200px;border-radius:20px;color:green;opacity:1.00;font-style:oblique;font-size:50px;"><b>Department Biomedical Engineering-2k19</b></h1>
     <img height="100"width="100" src="kuet.png">
 	<a id="kuet" href="http://www.kuet.ac.bd/" style="position:fixed;top:450px;left:150px;border:5px solid white;height:40px;font-size:30px;width:180px;color:black;border-radius:20px;"><b>KUET WEB</b></a>
 	<a id="syllabus" href="https://github.com/Sifatkhan-1915020/biomedi19.github.io/blob/master/sylla.pdf" style="position:fixed;top:450px;left:350px;border:5px solid white;height:40px;font-size:30px;width:200px;color:yellow;border-radius:20px;background-color:black;"><b>Syllabus pdf</b></a>
-    <div id="nava">
-	 <button id="btn" style="width:200px;height:50px;color:black;font-size:30px;"><b>Menu Bar</b></button><br>
-	 <div >
-	 
-	    <li><a href="index.html"><b><i>Home</i></b></a></li>
-		<li><a href="physics.html"><b><i>Physics</i></b></a></li>
-		<li><a href="Chemistry.html"><b><i>Chemistry</i></b></a></li>
-		<li><a href="Bme.html"><b><i>Biomedical</i></b></a></li>
-		<li><a href="Math.html"><b><i>Math</i></b></a></li>
-		<li><a href="EEE.html"><b><i>EEE</i></b></a></li>
-		<li><a href="Mecha.html"><b><i>Mecha Draw</i></b></a></li>
-		
-     </ul>
-	 </div>
+    
 	
-	</div>
+	
+	
   
   
   
