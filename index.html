@@ -2,11 +2,12 @@
  <head>
  <meta name="viewport" content="width=device-width,initial-scale=1">
  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
    <title>BIOMEDICAL ENGINEERING </title>
    <style>
     
           html { 
-  background: url(bgfgfg.jpg) no-repeat 
+  background: url(bg.jpg) no-repeat 
     center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,10 +18,11 @@
 		   
           		 
      h1  {
-	      text-shadow:green 1px 3px;
-	      animation :color 10s linear 0s infinite alternate;
+	      text-shadow:red 4px 3px;
+	       color:#45B8AC;
 		   font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
            font-stretch: expanded;
+		  background: rgba(0%, 0%, 30%, 0.75)
 		   
          }
 		 
@@ -41,6 +43,7 @@
 		   font-family: 'Lemonada', cursive;
 		   height:50px;
 		   width:1350px;
+		  
 		   }
 		   
 		   #logo {
@@ -64,7 +67,7 @@
 			  
 			     }
 		   #link a {
-			   color:white;
+			   color:black;
 			   text-decoration:none;
 			   letter-spacing:3px;
 			   }
@@ -79,6 +82,34 @@
 			border-radius:10px;
 			
 			}
+		 img{
+		   position:relative;
+		   top:-360px;
+		    }
+		#time {
+		    position:relative;
+			text-align:right;
+			font-family: 'Rowdies', cursive;
+			hieght:50px;
+			width:150px;
+			
+			left:1200px;
+			top:0px;
+			background-color:#45B8AC;
+			color:white;
+			
+			  }
+
+
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+
+		 
+		 
+		 
 		 
    @keyframes color {
         
@@ -101,7 +132,7 @@
 		 
 	 <ul id="link">
 	 
-		<li style="position:relative;left:-65px;"> <a href="home.html"><b>Home</b></a>
+		<li style="position:relative;left:-65px;"> <a href="index.html"><b>Home</b></a>
 		</li>
 		
 		<li style="position:relative;left:-50px;"  ><a href="Physics.html"><b>Physics</b></a>
@@ -141,11 +172,18 @@
 	 
 	 
 	 </nav>
+	<div id="time">
+	 <div align="center" id="clock"></div>
+	 <div align="center" id="date"></div>
+	 <div align="center" id="day"></div>
+	</div>
 	
-    <h1 align="center"  style="height:200px; width:550px;position:relative;left:150px;top:200px;border-radius:20px;color:green;opacity:1.00;font-style:oblique;font-size:50px;"><b>Department Biomedical Engineering-2k19</b></h1>
-    <img height="100"width="100" src="kuet.png">
-	<a id="kuet" href="http://www.kuet.ac.bd/" style="position:fixed;top:450px;left:150px;border:5px solid white;height:40px;font-size:30px;width:180px;color:black;border-radius:20px;"><b>KUET WEB</b></a>
-	<a id="syllabus" href="https://github.com/Sifatkhan-1915020/biomedi19.github.io/blob/master/sylla.pdf" style="position:fixed;top:450px;left:350px;border:5px solid white;height:40px;font-size:30px;width:200px;color:yellow;border-radius:20px;background-color:black;"><b>Syllabus pdf</b></a>
+ 
+
+    <h1 align="center"  style="height:200px; width:900px;position:relative;left:170px;top:130px;border-radius:20px;color:white;opacity:1.00;font-style:oblique;font-size:70px;"><b>Department Biomedical Engineering-2k19</b></h1>
+    <img  height="100"width="100" src="kuet.png">
+	<a id="kuet" href="http://www.kuet.ac.bd/" style="position:relative;top:450px;left:150px;border:5px solid white;height:40px;font-size:30px;width:180px;color:black;border-radius:20px;"><b>KUET WEB</b></a>
+	<a id="syllabus" href="https://github.com/Sifatkhan-1915020/biomedi19.github.io/blob/master/sylla.pdf" style="position:relative;top:450px;left:350px;border:5px solid white;height:40px;font-size:30px;width:200px;color:yellow;border-radius:20px;background-color:black;"><b>Syllabus pdf</b></a>
     
 	
 	
@@ -162,10 +200,59 @@
   
   
   
-  
-  
-  
-  
+  <script>
+
+
+
+
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+ 
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+    
+}
+function currentDate()
+          {
+	var d= new Date();
+    var year=d.getYear()+1900;
+    var month=d.getMonth();
+	var day  =d.getDate();
+	 
+	 document.getElementById("date").innerText=year+":"+month+":"+day;
+          }
+
+function day()
+ {
+   var day=new Date();
+    var week=new Array(7);
+	
+    week[0]="Sunday";
+	week[1]="Monday"
+	week[2]="Tuesday";
+	week[3]="Wednesday";
+	week[4]="Thursday";
+	week[5]="Friday";
+	week[6]="Satureday";
+	
+	var n = week[day.getDay()];
+	document.getElementById("day").innerText=n;
+	}
+	
+ 
+setInterval(currentTime,1000);
+setInterval(currentDate,84400000);
+setInterval(day,84400000);
+
+currentTime(); /* calling currentTime() function to initiate the process */
+currentDate();
+day();
+
+
+
+  </script>
   </body>
   
   </html>
