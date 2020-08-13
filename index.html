@@ -1,541 +1,176 @@
 <html>
- <head>
- <meta name="viewport" content="width=device-width,initial-scale=1.00">
- <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;700&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
-   <title>BIOMEDICAL ENGINEERING </title>
-   <style>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.00">
+
+
+
+  <style>
     
-          html { 
-  background: url(br.jpg) no-repeat 
-    center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-}
-		   
-          		 
-     h1  {
-	      text-shadow:red 4px 3px;
-	       color:#45B8AC;
-		   font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
-           font-stretch: expanded;
-		  background: rgba(0%, 0%, 30%, 0.75);
-		  max-width:1920px;
-		  min-width:480px;
-		  overflow:hidden;
-		   
-         }
+	*{
+	   padding:0px;
+	   margin:0px;
+	   text-decoration:none;
+	   list-style:none;
+	 }
+	 
+	 body{
+	  font-family:montserrat;
+	     }
+	 nav{
+	  background:#0082e6;
+	  height:80px;
+	  width:100%;
+	   }
+       #title {
+	  color:white;
+	  font-size:35px;
+	  font-weight:bold;
+	  padding:0px 100px;
+	  line-height:80px;
+	  }
+	  
+   
+      nav ul {
+	    float:right;
+		margin-right:30px;
+		 }
+   
+      nav ul li{
+	   display:inline-block;
+	   line-height:80px;
+	   margin:0px 5px;
+	   
+	   }
+	   nav ul li a {
+	    color:white;
+		font-size:17px;
+		font-weight:bold;
+		padding:7px 13px;
+		text-transform:uppercase;
+		border-radius:3px;
+		
+		}
+		a:hover {
+		 background:black;
+		 transition:0.5s;
 		 
-	
-		  
-		  * {
-		       margin:0 px;
-			   padding:0 px;
-			   box-sizing:border-box;
-			}
-		 
-		 nav {
-		   display:flex;
-		   justify-content:space-around;
-		   align-items:center;
-		   min-height:8vh;
-		   background-color:#45B8AC;
-		   font-family: 'Lemonada', cursive;
-		   height:50px;
-		   max-width:1350px;
-		   min-width:180px;
-		  
-		   }
-		   
-		   #logo {
-		     color:white;
-			 text-transform:uppercase;
-			 letter-spacing:5px;
-			 font-size:30px;
-			 }
-		   
-		   #link {
-		     display:flex;
-			 list-style:none;
-			 justify-content:space-around;
-			 width:40%;
-			 }
-		    #link li {
-               list-style:none;
-			   text-weight:bold;
-			   font-size:16px;
-			   color:white;
-			  
-			     }
-		   #link a {
-			   color:black;
-			   text-decoration:none;
-			   letter-spacing:3px;
-			   }
-		   
-		   
-		  #bar div {
-		    height:25px
-			width:5px;
-			background-color:rgb(226,226,226);
-			margin:5px;
-			border:5px solid white;
-			border-radius:10px;
-			
-			}
-		 img{
-		   position:relative;
-		   top:-500px;
-		    }
-		#time {
-		    position:relative;
-			text-align:right;
-			font-family: 'Rowdies', cursive;
-			hieght:50px;
-			width:150px;
-			
-			left:1200px;
-			top:0px;
-			background-color:#45B8AC;
-			color:white;
+		  }
+   
+       .checkbtn{
+	    float:right;
+		color:white;
+		line-height:80px;
+		padding:
+		margin-right:40px;
+		font-size:30px;
+		cursor:pointer;
+		display:none;
+		       }
+      #check {
+	    display:none;
+             }
+        @media only screen and (max-width:760px){
+		 #title {
+		    font-size:20px;
+			padding-left:50px;
 			
 			  }
-	    
-		.robot {
-    box-sizing: border-box;
-    position: relative ;
-    width: 160px;
-    height: 180px;
-    // background-color: rgba(black, 0.05);
-    bottom: 0;
-    left: 45%;
-	top:30px;
-}
-.head {
-    position: absolute;
-    width: 160px;
-    height: 100px;
-    background-color: #ccc;
-    border-radius: 6px;
-    overflow: hidden;
-    background: white;
-    transform-origin: 50% 100%;
-    animation: bob 8000ms ease-in-out alternate infinite -1000ms;
-}
-
-.eyes {
-    position: absolute;
-    top: calc(25% - 10px);
-    right: 30px;
-    left: 30px;
-    height: 20px;
-    
-}
-
-.eyeball {
-    position: absolute;
-    width: 12px;
-    height: 20px;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color:red;
-}
-
-.eyeball_left {
-    left: 0;
-    transition: transform 100ms ease-in-out;
-	animation: blink 5s linear alternate infinite;
-}
-
-.eyeball_right {
-    right: 0;
-    transition: transform 100ms ease-in-out;
-	animation: blink 5s linear alternate infinite;
-}
-
-.mouth {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    width: 150px;
-    height: 20px;
-    background-color: black;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: height 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-.mouth-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.robot_speaking {
-    .mouth {
-        height: 40px;
-    }
-    .mouth-container {
-        animation: speakingAnim 0.3s infinite;
-    }
-}
-
-.mouth-container-line {
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    background-color: limegreen;
-    width: 100%;
-    margin-top: -1px;
-}
-
-.torso {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 60px;
-    border-radius: 6px 6px 0 0;
-    background: linear-gradient(to right, #ccc 0%, lighten(#ccc, 10%) 40%, lighten(#ccc, 10%) 60%,#ccc 100%);
-}
-
-.neck {
-    position: absolute;
-    bottom: 45px;
-    left: calc(50% - 15px);
-    width: 30px;
-    height: 50px;
-    border-radius: 15px;
-    background:
-        repeating-linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 7%, rgb(100,100,100) 10%),
-        linear-gradient(to right, #ccc 0%, lighten(#ccc, 10%) 40%, lighten(#ccc, 10%) 60%,#ccc 100%);
-}
-
-.arms {
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-    right: 30px;
-    height: 50px;
-}
-
-.arm {
-    position: absolute;
-    top: 0;
-    width: 20px;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-    background:
-        repeating-linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 7%, rgb(100,100,100) 10%),
-        linear-gradient(to right, #ccc 0%, lighten(#ccc, 10%) 40%, lighten(#ccc, 10%) 60%,#ccc 100%);
-}
-
-.arm_left {
-    left: 0;
-}
-
-.arm_right {
-    right: 0;
-}
-
-@keyframes lowAnim {
-    0% {
-        filter: url('#low-0');
-    }
-    25% {
-        filter: url('#low-1');
-    }
-    50% {
-        filter: url('#low-2');
-    }
-    75% {
-        filter: url('#low-3');
-    }
-    100% {
-        filter: url('#low-4');
-    }
-}
-
-@keyframes listeningAnim {
-    0% {
-        filter: url('#listening-0');
-    }
-    25% {
-        filter: url('#listening-1');
-    }
-    50% {
-        filter: url('#listening-2');
-    }
-    75% {
-        filter: url('#listening-3');
-    }
-    100% {
-        filter: url('#listening-4');
-    }
-}
-
-@keyframes speakingAnim {
-    0% {
-        filter: url('#speaking-0');
-    }
-    25% {
-        filter: url('#speaking-1');
-    }
-    50% {
-        filter: url('#speaking-2');
-    }
-    75% {
-        filter: url('#speaking-3');
-    }
-    100% {
-        filter: url('#speaking-4');
-    }
-}
-
-@keyframes bob {
-    0% {
-        transform: rotate(-3deg);
-    }
-    40% {
-        transform: rotate(-3deg);
-        animation-timing-function: cubic-bezier(1, 0, 0, 1);
-    }
-    60% {
-        transform: rotate(3deg);
-    }
-    100% {
-        transform: rotate(3deg);
-    }
-}
-
-@keyframes blink {
-    0% {
-        transform: scale(1,1);background-color:black;
-    }
-    50% {
-        transform: scale(1,0.1);background-color:red;
-    }
-    100% {
-        transform: scale(1,1);background-color:yellow;
-    }
-}
-
-
-
-@keyframes wave {
-  from { transform: rotate(0deg);}
-  from { transform: rotate(360deg);}
-}
-
-		 
-		 
-		 
-		 
-   @keyframes color {
-        
-        
-		0%{color:black;}
-		50%{color:red;}
-		100%{color:yellow;}
-                    }
-					
+       .checkbtn{
+	    display:block;
+		padding-right:30px;
+		font-size:17px;
+		    }
+        ul {
+		  position:fixed;
+		  width:100%;
+		  height:100vh;
+		  background:#2c3e50;
+		  top:80px;
+		  left:-100%;
+		  text-align:center;
+		  transition:all 0.5s;
+		  
+		  }
+		  
+	nav ul li {
+	   display:block;
 	   
-   </style>
- </head>
-  
-  <body >
-   <nav>
-	 
-	    <div id="logo">
-		 <h4>Menu</h4>
-		 </div>
-		 
-	 <ul id="link">
-	 
-		<li style="position:relative;left:-65px;"> <a href="index.html"><b>Home</b></a>
-		</li>
+		  }
+    nav ul li a {
+	    font-size:20px;
+		 }
+	a:hover{
+   border:2px solid white;
+	   }
+	  
+	  #check:checked ~ul{
+	     left:0;
+		  }
+	  
 		
-		<li style="position:relative;left:-50px;"  ><a href="Physics.html"><b>Physics</b></a>
-		</li>
-		
-		<li style="position:relative;left:-35px;" ><a href="Chemistry.html"><b>Chemistry</b></a>
-		</li>
-		
-		<li style="position:relative;left:-20px;"><a href="bme.html"><b>Biomedical</b></a>
-		</li>
-		
-		<li style="position:relative;left:-10 px;" ><a href="EEE.html"><b>EEE</b></a>
-		</li>
-		
-		<li style="position:relative;left:20px;" > <a href="Mecha.html"><b>MechaDrawing</b></a>
-		</li>
-		
-		<li style="position:relative;left:40px;" > <a href="Math.html"><b>Math</b></a>
-		</li>
-	 
-	 </ul>
-	 
-	 
-	  <div id="bar">
-	 
-	    <div id="bar1"></div>
-	    <div id="bar2"></div>
-	    <div id="bar3"></div>
-	 
-	  </div>
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 </nav>
-	<div id="time">
-	 <div align="center" id="clock"></div>
-	 <div align="center" id="date"></div>
-	 <div align="center" id="day"></div>
-	</div>
-	
-	<div class="robot">
-	
-    <div class="neck"></div>
-    <div class="arms">
-        <div class="arm arm_left"></div>
-        <div class="arm arm_right"></div>
-    </div>
-    <div class="torso"></div>
-    <div class="head"><p align="center" style="position:fixed;top:20px;left:40px;">Tap Here</p>
-        <div class="eyes">
-            <div class="eyeball eyeball_left"></div>
-            <div class="eyeball eyeball_right"></div>
-        </div>
-        <div class="mouth">
-  
-          <div class="mouth-container">
-                <div class="mouth-container-line"></div>
-            </div>
-        </div>
-    </div>
-</div>
+		 }
+        
+   
+   
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  </style>
  
+</head>
 
-    <h1 align="center"  style="height:200px;max-width:1920px;min-width:50px;overflow:hidden;position:relative;left:170px;top:50px;border-radius:20px;color:white;opacity:1.00;font-style:oblique;font-size:70px;"><b>Department Biomedical Engineering-2k19</b></h1>
-    <img  height="100"width="100" src="kuet.png">
-	<a id="kuet" href="http://www.kuet.ac.bd/" style="position:relative;top:450px;left:150px;border:5px solid white;height:40px;font-size:30px;width:180px;color:black;border-radius:20px;"><b>KUET WEB</b></a>
-	<a id="syllabus" href="https://github.com/Sifatkhan-1915020/biomedi19.github.io/blob/master/sylla.pdf" style="position:relative;top:450px;left:350px;border:5px solid white;height:40px;font-size:30px;width:200px;color:yellow;border-radius:20px;background-color:black;"><b>Syllabus pdf</b></a>
-    
-	
-	
-	
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script>
-
-
-
-
-function currentTime() {
-  var date = new Date(); /* creating object of Date class */
-  var hour = date.getHours();
-  var min = date.getMinutes();
-  var sec = date.getSeconds();
- 
-  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-    
-}
-function currentDate()
-          {
-	var d= new Date();
-    var year=d.getYear()+1900;
-    var month=d.getMonth();
-	var day  =d.getDate();
-	 
-	 document.getElementById("date").innerText=year+":"+month+":"+day;
-          }
-
-function day()
- {
-   var day=new Date();
-    var week=new Array(7);
-	
-    week[0]="Sunday";
-	week[1]="Monday"
-	week[2]="Tuesday";
-	week[3]="Wednesday";
-	week[4]="Thursday";
-	week[5]="Friday";
-	week[6]="Satureday";
-	
-	var n = week[day.getDay()];
-	document.getElementById("day").innerText=n;
-	}
-	
- 
-setInterval(currentTime,1000);
-setInterval(currentDate,84400000);
-setInterval(day,84400000);
-
-currentTime(); /* calling currentTime() function to initiate the process */
-currentDate();
-day();
-
- 
- const CONFIG = {
-    DEFAULT: false,
-    VOICE: 'google',
-};
-
-const robot = document.querySelector('.robot');
-
-let message = new SpeechSynthesisUtterance();
-
-message.text = `Hello!!Welcome to Biomedical ENGINEERING!Batch-2k19`;
-
-let voices = [];
-
-
-speechSynthesis.addEventListener('voiceschanged', event => {
-    voices = speechSynthesis.getVoices();
-    if (!CONFIG.DEFAULT) {
-        message.voice = voices.find(voice => voice.name === CONFIG.VOICE);
-    }
-});
-
-message.onend = function(event) {
-    robot.classList.remove('robot_speaking');
-}
-
-robot.addEventListener('click', event => {
-    if (speechSynthesis.speaking) {
-        robot.classList.remove('robot_speaking');
-        speechSynthesis.cancel();
-    } else {
-        robot.classList.add('robot_speaking');
-        speechSynthesis.speak(message);
-    }
-});
+<body>
+<nav> 
+ <input type="checkbox" id="check">
+ <label for="check" class="checkbtn">
+    <b>Menu</b>
+ </label>
+ <label id="title">KBME-19</label>
+   <ul>
+     <li><a href="#index">home</a></li>
+     <li><a href="#index">Physics</a></li>
+     <li><a href="#index">Chemistry</a></li>
+     <li><a href="#index">Math</a></li>
+     <li><a href="#index">Biomedical</a></li>
+     <li><a href="#index">Practical</a></li>
+     <li><a href="#index">Bot</a></li>
+     <li><a href="#index">other</a></li>
+   </ul>
+     
+</nav>  
+     
 
 
 
 
-  </script>
-  </body>
-  
-  </html>
-  
+
+
+
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+</body>
+
+
+</html>
