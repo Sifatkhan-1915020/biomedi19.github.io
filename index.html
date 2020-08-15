@@ -1,8 +1,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.00">
-
-
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <style>
     
@@ -15,6 +15,10 @@
 	 
 	 body{
 	  font-family:montserrat;
+	   background: url(btme.jpg) no-repeat ; 
+  
+  background-size:100%
+  
 	     }
 	 nav{
 	  background:#0082e6;
@@ -29,11 +33,12 @@
 	  line-height:80px;
 	  }
 	  
-   
-      nav ul {
+        nav ul {
 	    float:right;
 		margin-right:30px;
 		 }
+    
+    
    
       nav ul li{
 	   display:inline-block;
@@ -68,11 +73,65 @@
 		       }
       #check {
 	    display:none;
-             }
+		
+           }	 
+	  .note{
+          font-family: 'Luckiest Guy', cursive;
+		    font-size:40px;
+			opacity:100%;
+			margin-left:40px;
+			padding-bottom:70px;
+          } 			
+	    #welcome{
+		   width:100%;
+		    background: url(bbme.jpg) no-repeat ; 
+  
+  background-size:100%;
+       height:250px;
+	   
+	  
+		      }
+	    #kbme {
+		   text-align:center;
+		   text-transform:uppercase;
+		   padding-top:20px;
+		
+		   }
+		#kuet:hover{
+		   color:blue;
+		     }
+		 #kuet{
+		  border:2px solid black;
+		 
+		  font-size:30px;
+		  }
+		  #k{
+		
+		   padding-top:20px;
+		    padding-bottom:20px;
+		    width:250px;
+			 border-left:6px dotted blue;
+		  border-right:6px dotted blue;
+		  border-bottom-style:none;
+		  border-top-style:none;
+			border-radius:40px;
+			height:30px;
+		   margin-left:40%;
+		    }
+	     #k1{
+		   font-size:28px;
+		   }
+		 
+		nav div {
+		 float:right;
+		  }
+		
+
+		
         @media only screen and (max-width:760px){
 		 #title {
 		    font-size:20px;
-			padding-left:50px;
+			padding-left:40px;
 			
 			  }
        .checkbtn{
@@ -80,10 +139,10 @@
 		padding-right:30px;
 		font-size:17px;
 		    }
-        ul {
-		  position:fixed;
+       #menu {
+            position:absolute;
 		  width:100%;
-		  height:100vh;
+		  height:200vh;
 		  background:#2c3e50;
 		  top:80px;
 		  left:-100%;
@@ -93,21 +152,61 @@
 		  }
 		  
 	nav ul li {
-	   display:block;
+	  
+	   display: block;
 	   
 		  }
     nav ul li a {
+	   
 	    font-size:20px;
 		 }
-	a:hover{
-   border:2px solid white;
-	   }
+	
+
 	  
 	  #check:checked ~ul{
 	     left:0;
 		  }
+	  #welcome{
+	
+       height:30%;
 	  
+		      }
+	  #kuet{
+		  
+		  font-size:17px;
+		  }
+		  #kbme {
+		   
+		   font-size:30px;
 		
+		   }
+		    #k{
+		     
+			padding:0px;
+		    height:45px;
+		    width:150px;
+		   padding-bottom:20px;
+		   font-size:30px;
+		    margin-left:30%;
+		  border-left:6px dotted blue;
+		  border-right:6px dotted blue;
+		  border-bottom-style:none;
+		  border-top-style:none;
+		    }
+		   #k1{
+		  font-size:17px;
+		     }
+		  
+		
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 		 }
         
    
@@ -149,7 +248,7 @@
     <b>Menu</b>
  </label>
  <label id="title">KBME-19</label>
-   <ul>
+   <ul id="menu">
      <li><a href="#index">home</a></li>
      <li><a href="#index">Physics</a></li>
      <li><a href="#index">Chemistry</a></li>
@@ -162,6 +261,142 @@
      
 </nav>  
      
+   <div id="welcome"><p class="note"> Welcome To Biomedical Engineering
+                     Batch-2k19</p>
+
+    </div>
+	<h1 id="kbme">KUET Biomedical ENGINEERING </h1>
+ 
+ <p id="kuet" style="text-align:left">Kuet is one of the best university in Bangladesh with promising Faculty members ,staffs and hard-working talented students.
+    Kuet is the pioneer of Biomedical Science and Engineering in Bangladesh.Kuet Biomedical Engineering Department starts their
+	under-graduation programme from 2014.Kuet Biomedical Engineering proviodes best education on biomedical science and applications.
+    </p></br>
+
+ <h1 align="center" id="k">  KUET BME'19 </h1></br>
+ <p id="k1">Kuet BME batch-2K19 is the fresher batch of the department .They have 29 Members in a single section.All of 
+     them are promising and patron to their department though they have different backgrounds,origins,choices and 
+	 life-styles. The Batch CR is Mr.Ozayer is  efficient in batch-leading and Mr.Sudeep,elected as ACR is also perfect in  
+     in his own job.Mr.Safin is the batch co-ordinator,is very perfect in co-ordinating whole batch-2k19.BME Batch 2k19 is attached in
+	 Dr.M.A.Rashid Hall.</p></br>
+<h2>Our Respected BTeachers</h2></br>
+  
+   <section class="card-section">
+    <div class="row">
+	  <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	    </div>
+		<div class="row">
+	  <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	    </div>
+		<div class="row">
+	  <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	 <div class="col-lg-4">
+
+           <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+ 
+    </div>
+	    </div>
+
+  </section>
 
 
 
@@ -169,7 +404,9 @@
 
 
 
-<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 
