@@ -123,49 +123,26 @@
 		 .card:hover{
 		  box-shadow:5px 10px 20px 1px black;
 		   }
-		  #contact1{
+		  
+		  .contact{
+		  text-align:center;
+		     }
+		  iframe{
+		  height:520px;
+		  width:400px;
+		  text-align:center;
+		  border:none;
+		  
+			  }
+		  #contact-form{
 		   text-align:center;
 		     }
-		  #contact2{
-		    text-align:center;
-			  }
-		   #connect-form{
-		     text-align:center;
-			  }
-		  form{
-		    margin-top:50px;
-			transition:all 4s ease-in-out;
+		   #k{
+		    font-size:30px;
+		    background:green;
+			color:white;
 			
 			}
-		 .name{
-		   width:600px;
-		   background:transparent;
-		   border:none;
-		   outline:none;
-		   color:#fff;
-		   border-bottom:1px solid gray;
-		   font-size:18px;
-		   margin-bottom:16px;
-		   color:black;
-		    }
-		  input{
-		   height:45px;
-		    }
-			.submit{
-			 background:#ff5722;
-		     border-color:transparent;
-			 color:#fff;
-			 font-size:20px;
-			 font-weight:bold;
-			 margin-top:20px;
-			 height:50px;
-			 letter-spacing:2px;
-			  }
-			 .submit:hover{
-			  cursor :pointer;
-			  background-color:#f44;
-			  }
-		
         @media only screen and (max-width:760px){
 		 #title {
 		    font-size:20px;
@@ -180,7 +157,7 @@
        #menu {
             position:absolute;
 		  width:100%;
-		  height:800vh;
+		  height:700vh;
 		  background:#2c3e50;
 		  top:80px;
 		  left:-100%;
@@ -226,10 +203,18 @@
 		  #e{
 		   display:none;
 		    }
+		 iframe{
+		  height:520px;
+		  width:300px;
 		 
+		 }
 		 
-		 
-		 
+		 .note{
+          font-family: 'Luckiest Guy', cursive;
+		    font-size:35px;
+			opacity:100%;
+			margin-left:40px;
+			padding-bottom:70px;
 		 
 		 
 		 
@@ -292,7 +277,7 @@
 </nav>  
      
    <div id="welcome"><p class="note"> Welcome To Biomedical Engineering
-                     Batch-2k19</p>
+                    </br> Batch-2k19</p>
 
     </div>
 	<h1 id="kbme">KUET Biomedical ENGINEERING </h1>
@@ -471,20 +456,15 @@
 	    </div>
   </section>
 
- <h2 id="contact1">Hey!Write To Us </h2>
- <h4 id="contact2">we are ready for serving</h4>
+ <h2 class="contact">Hey!Write To Us </h2>
+ <h4 class="contact">we are ready for serving</h4>
    
-   <div id="connect-form">
-    <form id="contact-form" method="post" action="mess.php">
-	<input class="name" type="text" name="Name" placeholder="Please Write Your Name" required></br>
-	<input class="name"  name="Batch" placeholder="Please Write Your Batch" required></br>
-	<input class="name"  name="Email" placeholder="Please Write Your Email" required></br>
-	<textarea class="name" name="message" placeholder="Your Message" row="4" required></textarea></br>
-	<input  type="submit" class="name submit" value="SEND MESSAGE" >
-	
-	</form>
-	</div>
-
+   
+   <div id="contact-form">
+   
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep-LTCxxXj8gRdiXNtaeNZfCoZ7vKhllHOvSFcjXcJH4dGtw/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   
+   </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
