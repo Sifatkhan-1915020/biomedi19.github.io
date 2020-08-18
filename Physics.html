@@ -1,10 +1,184 @@
 <html>
+
 <head>
+<meta name="viewport" content="width=device-width,initial-scale=1.00">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+	*{
+	   padding:0px;
+	   margin:0px;
+	   text-decoration:none;
+	   list-style:none;
+	 }
+	 
+	 body{
+	  font-family:montserrat;
+	   background: url(btme.jpg) no-repeat ; 
+  
+  background-size:100%
+  
+	     }
+	 nav{
+	  background:#0082e6;
+	  height:80px;
+	  width:100%;
+
+	   }
+       #title {
+	  color:white;
+	  font-size:35px;
+	  font-weight:bold;
+	  padding:0px 100px;
+	  line-height:80px;
+	  }
+	  
+        nav ul {
+	    float:right;
+		margin-right:30px;
+		 }
+    
+    
+   
+      nav ul li{
+	   display:inline-block;
+	   line-height:80px;
+	   margin:0px 5px;
+	   
+	   }
+	   nav ul li a {
+	    color:white;
+		font-size:17px;
+		font-weight:bold;
+		padding:7px 13px;
+		text-transform:uppercase;
+		border-radius:3px;
+		
+		}
+		a:hover {
+		 background:black;
+		 transition:0.5s;
+		 
+		  }
+   
+       .checkbtn{
+	    float:right;
+		color:white;
+		line-height:80px;
+		padding:
+		margin-right:40px;
+		font-size:30px;
+		cursor:pointer;
+		display:none;
+		       }
+      #check {
+	    display:none;
+		}
+
+        @media only screen and (max-width:760px){
+		  #title {
+		    font-size:20px;
+			padding-left:40px;
+			
+			  }
+       .checkbtn{
+	    display:block;
+		padding-right:30px;
+		font-size:17px;
+		   }
+       #menu {
+            position:absolute;
+		  width:100%;
+		  height:700vh;
+		  background:#2c3e50;
+		  top:80px;
+		  left:-100%;
+		  text-align:center;
+		  transition:all 0.5s;
+		  z-index:+1;
+		  }
+		  
+	nav ul li {
+	  
+	   display: block;
+	   
+		  }
+    nav ul li a {
+	   
+	    font-size:20px;
+		 }
+	
+
+	  
+	  #check:checked ~ul{
+	     left:0;
+		  }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
-<p>HI</p>
+<nav> 
+ <input type="checkbox" id="check">
+ <label for="check" class="checkbtn">
+    <b>Menu</b>
+ </label>
+ <label id="title">KBME-19</label> 
 
+   <ul id="menu">
+     
+	 
+     <li><a href="Physics.html">Home</a></li>
+     <li><a href="#index">Physics</a></li>
+     <li><a href="#index">Phy-Book</a></li>
+     <li><a href="#index">Phy-Lect</a></li>
+     <li><a href="#index">Phy-Video</a></li>
+     <li><a href="bot.html">Phy-Bot</a></li>
+     <li><a href="#index">Phy-Pract</a></li>
+	
+   </ul>
+     
+</nav> 
+
+<div id="welcome"><p class="note"> Welcome To Biomedical Engineering
+                    </br> Batch-2k19</p>
+					
+					<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/09bbf57d-3491-404b-bd5c-b94fe5d69731"></iframe
 
 </body>
-
 </html>
