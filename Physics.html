@@ -77,7 +77,174 @@
       #check {
 	    display:none;
 		}
+		.note{
+          font-family: 'Luckiest Guy', cursive;
+		    font-size:80px;
+			opacity:100%;
+			margin-left:40px;
+			padding-bottom:70px;
+			text-align:center;
+			padding-top:50px;
+		     color:transparent;
+			-webkit-text-stroke:2px green;
+		    animation:animate 5s linear  infinite alternate;
+          } 			
+	    #welcome{
+		   width:100%;
+		    background:url(phrt.jfif);
+  
+  background-size:100%;
+       height:250px;
+	   
+	  
+		      }
+			  
+		#kbme {
+		   text-align:center;
+		   text-transform:uppercase;
+		   padding-top:20px;
+		
+		   }
+		#kuet:hover{
+		   color:blue;
+		     }
+		 #kuet{
+		  border:2px solid black;
+		 
+		  font-size:30px;
+		  }
+		 button {
+		   margin-left:90px;
+		     }
+		  #circle{
+            border-radius:40px;
+			border:6px dotted red;
+			height:80px;
+			width:80px;
+			position:relative;
+			top:-20px;
+			left:40px;
+         animation:circle 5s linear  infinite alternate-reverse;
+  
+   }
+		  
+		 @keyframes animate {
+		  0%  {transform:translateY(60px),;color:green;letter-spacing:20px;}
+		  40% {transform:translateY(0px);color:black;letter-spacing:10px;}
+		  70%  {transform:translateY(-60px);color:white;letter-spacing:20px;}
+		  100%  {transform:translateY(0px);color:blue;letter-spacing:0px;}
+		   }
+		 @keyframes circle {
+		   0%  {transform:translateY(-20px);background:black;}
+		  40% {transform:translateY(0px);transform:rotate(30deg);}
+		  70%  {transform:translateY(-20px);transform:rotate(90deg);background:blue;}
+		  100%  {transform:translateY(0px);transform:rotate(360deg);}
+		     
+		    }
+		 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.base {
+  width: 500px;
+  border-top: 5px solid gray;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 0 0 30px;
+}
+
+.holder {
+  width: 30px;
+  height: 20px;
+  background: black;
+  margin: auto;
+  border-radius: 0 0 50% 50%;
+}
+
+.thread {
+  display: inline-block;
+  width: 2px;
+  height: 200px;
+  background: black;
+  border-radius: 5px;
+  position: relative;
+  transform-origin: 50% 0;
+  animation: moveIt 2.5s ease-in-out infinite;
+}
+
+.thread:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
+  border: 2px solid white;
+  top: -4.5px;
+  left: -3.5px;
+}
+
+.knob {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -18px;
+  left: -4.5px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  border-bottom: 2px solid transparent;
+}
+
+.pendulum {
+  width: 20px;
+  height: 20px;
+  background: -moz-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: -webkit-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: -o-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: -ms-radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  left: -9px;
+}
+
+.shadow {
+  width: 30px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 50px auto 0;
+  animation: moveShade 1.25s ease-in-out alternate infinite;
+}
+
+@keyframes moveIt {
+  0%, 100% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes moveShade {
+  0% {
+    transform: translateX(-220px) scale(1.4, .5);
+    filter: blur(20px);
+  }
+  50% {
+    filter: blur(3px);
+  }
+  100% {
+    transform: translateX(220px) scale(1.4, .5);
+    filter: blur(20px);
+  }
+}
+
+		 
         @media only screen and (max-width:760px){
 		  #title {
 		    font-size:20px;
@@ -92,7 +259,7 @@
        #menu {
             position:absolute;
 		  width:100%;
-		  height:700vh;
+		  height:200vh;
 		  background:#2c3e50;
 		  top:80px;
 		  left:-100%;
@@ -117,16 +284,36 @@
 	     left:0;
 		  }
 
+       
+         #kuet{
+		  
+		  font-size:17px;
+		  }
+		  #kbme {
+		   
+		   font-size:30px;
+		
+		   }
+         .note{
+          font-family: 'Luckiest Guy', cursive;
+		    font-size:60px;
+			opacity:100%;
+			margin-left:40px;
+			padding-bottom:70px;
+			
+		 }
+	.base {
+  width: 50px;
+  border-top: 5px solid gray;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 0 0 30px;
+}
 
 
 
-
-
-
-
-
-
-
+        }
 </style>
 
 
@@ -163,7 +350,7 @@
    <ul id="menu">
      
 	 
-     <li><a href="Physics.html">Home</a></li>
+     <li><a href="index.html">Home</a></li>
      <li><a href="#index">Physics</a></li>
      <li><a href="#index">Phy-Book</a></li>
      <li><a href="#index">Phy-Lect</a></li>
@@ -175,10 +362,42 @@
      
 </nav> 
 
-<div id="welcome"><p class="note"> Welcome To Biomedical Engineering
-                    </br> Batch-2k19</p>
-					
-					<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/09bbf57d-3491-404b-bd5c-b94fe5d69731"></iframe
+<div id="welcome"><p class="note">PHYSICS</p>  
+ 
+<div id="pendu"style="position:relative;top:-100px;"> 
+  <div id="circle">
+ </div>
+  
+  <div class="base">
+  <div class="holder"></div>
+  <div class="thread">
+    <div class="knob"></div>
+    <div class="pendulum"></div>
+  </div>
+  <div class="shadow"></div>
+</div>
+</div>  
+  </div></br> 
+<marquee behaviour="scroll" direction="right" style="background:yellow;">New Uploads will be shown here</marquee>
 
+<h1 id="kbme" style="background:green;padding-bottom:20px;color:white;"><b>About PHYSICS</b> </h1>
+ 
+ <p id="kuet" style="text-align:left">Kuet is one of the best university in Bangladesh with promising Faculty members ,staffs and hard-working talented students.
+    Kuet is the pioneer of Biomedical Science and Engineering in Bangladesh.Kuet Biomedical Engineering Department starts their
+	under-graduation programme from 2014.Kuet Biomedical Engineering proviodes best education on biomedical science and applications.
+    </p></br>
+
+<div style="background:#ee28cd;">
+<center><b>TOPICS</b></center>				
+<ul style="text-align:center" >
+
+  <li>Simple Harmonic Motion</li>
+  <li>Damped Harmonic MOtion</li>
+  <li>Modern Physics</li>
+  <li>Nuclear Physics</li>
+
+</ul>				
+	</div>				
+<button Style="color:#223344;background:black;height:60px;box-shadow:5px 5px 5px 5px #443322;"><a style="color:white;"href="https://github.com/Sifatkhan-1915020/biomedi19.github.io/blob/master/phy.pdf" download="Physics-syllabus">PHYSICS SYLLABUS PDF</a></button></br></br></br>
 </body>
 </html>

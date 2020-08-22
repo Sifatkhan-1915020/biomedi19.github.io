@@ -1,0 +1,244 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.00">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    
+	*{
+	   padding:0px;
+	   margin:0px;
+	   text-decoration:none;
+	   list-style:none;
+	 }
+	 
+	 body{
+	  font-family:montserrat;
+	   background: url(btme.jpg) no-repeat ; 
+  
+  background-size:100%
+  
+	     }
+	 nav{
+	  background:#0082e6;
+	  height:80px;
+	  width:100%;
+
+	   }
+       #title {
+	  color:white;
+	  font-size:35px;
+	  font-weight:bold;
+	  padding:0px 100px;
+	  line-height:80px;
+	  }
+	  
+        nav ul {
+	    float:right;
+		margin-right:30px;
+		 }
+    
+    
+   
+      nav ul li{
+	   display:inline-block;
+	   line-height:80px;
+	   margin:0px 5px;
+	   
+	   }
+	   nav ul li a {
+	    color:white;
+		font-size:17px;
+		font-weight:bold;
+		padding:7px 13px;
+		text-transform:uppercase;
+		border-radius:3px;
+		
+		}
+		a:hover {
+		 background:black;
+		 transition:0.5s;
+		 
+		  }
+   
+       .checkbtn{
+	    float:right;
+		color:white;
+		line-height:80px;
+		padding:
+		margin-right:40px;
+		font-size:30px;
+		cursor:pointer;
+		display:none;
+		       }
+      #check {
+	    display:none;
+		
+           }	 
+	  .note{
+          font-family: 'Luckiest Guy', cursive;
+		    font-size:40px;
+			opacity:100%;
+			margin-left:40px;
+			padding-bottom:70px;
+          } 
+		 .card-section{
+		 padding:5%;
+		 text-align:center;
+		   }
+        .col-lg-4{
+		 padding:2% 2%;
+		  }
+		 .card:hover{
+		  box-shadow:5px 10px 20px 1px black;
+		   }
+		  
+		.rt{
+		    color:white;
+			animation:color 1s linear infinite alternate;
+		    
+		   }
+		  @keyframes color{
+		   0%{background:black;}
+		   50%{background:blue;}
+		   
+		   }
+		  .card{
+		   border:2px solid black;
+		     
+		    }
+		   
+         .video{
+		   display:inline-block;
+		   margin:2% 2%;
+		   border:2px solid black;
+		   }
+
+         body{
+		  background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+      animation:bg 4s linear infinite alternate;
+           }
+ 
+		   @keyframes bg {
+		    0%{ background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); }
+ 
+           50%{background-color: #fad0c4;
+background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);}
+          
+		  80% {background-color: #fad0c4;
+background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);}
+          
+		  100% {background-color: #f8f9d2;
+background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);}
+      }
+
+		 iframe{
+    margin-left:500px;
+    }	
+		   
+		   
+		   
+		   
+		   @media only screen and (max-width:760px){
+		  #title {
+		    font-size:20px;
+			padding-left:40px;
+			
+			  }
+       .checkbtn{
+	    display:block;
+		padding-right:30px;
+		font-size:17px;
+		   }
+       #menu {
+            position:absolute;
+		  width:100%;
+		  height:100vh;
+		  background:#2c3e50;
+		  top:80px;
+		  left:-100%;
+		  text-align:center;
+		  transition:all 0.5s;
+		  z-index:+1;
+		  }
+		  
+	nav ul li {
+	  
+	   display: block;
+	   
+		  }
+    nav ul li a {
+	   
+	    font-size:20px;
+		 }
+	
+
+	  
+	  #check:checked ~ul{
+	     left:0;
+		  }
+      card-section{
+		 padding-left:25px;
+		 text-align:center;
+		   }
+		 
+       #car{
+	    text-align:center;
+		padding-left:15%;
+		 }
+	 
+	 .video{
+		   display:inline-block;
+		   margin:2% 2%;
+		   border:2px solid black;
+		   margin-left:25px;
+		  
+		   }
+	    iframe{
+    margin-left:5px;
+    }	
+		 
+	}
+		 </style>
+		  </head>
+<body>
+  
+  <nav> 
+ <input type="checkbox" id="check">
+ <label for="check" class="checkbtn">
+    <b>Menu</b>
+ </label>
+ <label id="title">KBME-19</label> 
+
+   <ul id="menu">
+     
+	 
+     <li><a href="index.html">Home</a></li>
+     <li><a href="#index">Physics</a></li>
+     <li><a href="#index">Phy-Book</a></li>
+     <li><a href="#index">Phy-Lect</a></li>
+     <li><a href="#index">Phy-Video</a></li>
+     <li><a href="bot.html">Phy-Bot</a></li>
+     <li><a href="#index">Phy-Pract</a></li>
+	
+   </ul>
+     
+</nav></br></br> 
+<marquee behaviour="scroll" direction="left" style="background:yellow;">Physics bot will be uploaded regularly and we gonna make it very user friendly.All the Definitions,equations and any question about Physics of 1st year 1st semister ,you will get here In Sha Allah!!!</marquee>
+</br></br>
+
+<iframe height="430" width="350" src="https://bot.dialogflow.com/73d836ed-2cb2-47fa-9b80-c6ed1aa212d7"></iframe>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+ </html>
