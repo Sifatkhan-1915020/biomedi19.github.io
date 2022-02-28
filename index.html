@@ -1,523 +1,640 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.00">
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <style>
-    
-	*{
-	   padding:0px;
-	   margin:0px;
-	   text-decoration:none;
-	   list-style:none;
-	 }
-	 
-	 body{
-	  font-family:montserrat;
-	   background: url(btme.jpg) no-repeat ; 
-  
-  background-size:100%
-  
-	     }
-	 nav{
-	  background:#0082e6;
-	  height:80px;
-	  width:100%;
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	   }
-       #title {
-	  color:white;
-	  font-size:35px;
-	  font-weight:bold;
-	  padding:0px 100px;
-	  line-height:80px;
-	  }
-	  
-        nav ul {
-	    float:right;
-		margin-right:30px;
-		 }
-    
-    
-   
-      nav ul li{
-	   display:inline-block;
-	   line-height:80px;
-	   margin:0px 5px;
-	   
-	   }
-	   nav ul li a {
-	    color:white;
-		font-size:17px;
-		font-weight:bold;
-		padding:7px 13px;
-		text-transform:uppercase;
-		border-radius:3px;
-		
-		}
-		a:hover {
-		 background:black;
-		 transition:0.5s;
-		 
-		  }
-   
-       .checkbtn{
-	    float:right;
-		color:white;
-		line-height:80px;
-		padding:
-		margin-right:40px;
-		font-size:30px;
-		cursor:pointer;
-		display:none;
-		       }
-      #check {
-	    display:none;
-		
-           }	 
-	  .note{
-          font-family: 'Luckiest Guy', cursive;
-		    font-size:40px;
-			opacity:100%;
-			margin-left:40px;
-			padding-bottom:70px;
-          } 			
-	    #welcome{
-		   width:100%;
-		    background: url(bbme.jpg) no-repeat ; 
-  
-  background-size:100%;
-       height:250px;
-	   
-	  
-		      }
-	    #kbme {
-		   text-align:center;
-		   text-transform:uppercase;
-		   padding-top:20px;
-		
-		   }
-		#kuet:hover{
-		   color:blue;
-		     }
-		 #kuet{
-		  border:2px solid black;
-		 
-		  font-size:30px;
-		  }
-		 
-	     #k1{
-		   font-size:28px;
-		   }
-		 
-		nav div {
-		 float:right;
-		  }
-		.card-section{
-		 padding:5%;
-		 text-align:center;
-		   }
-        .col-lg-4{
-		 padding:2% 2%;
-		  }
-		 .card:hover{
-		  box-shadow:5px 10px 20px 1px black;
-		   }
-		  
-		  .contact{
-		  text-align:center;
-		     }
-		  iframe{
-		  height:520px;
-		  width:400px;
-		  text-align:center;
-		  border:none;
-		  
-			  }
-		  #contact-form{
-		   text-align:center;
-		     }
-		   #k{
-		    font-size:30px;
-		    background:green;
-			color:white;
-			padding-top:20px;
-			padding-bottom:20px;
-			border-radius:50px;
-			
-			}
-			#k:hover{
-			 background-color:#0082e6;
-			 
-			  }
-		   #teacher{
-		     font-size:30px;
-			 text-align:center;
-			 padding-top:20px;
-			 padding-bottom:20px;;
-			 background:green;
-			 color:white;
-			   }
-			.card-img-top{
-			  height:250px;
-			   }
-			   
-			   
-			#med{
-			  text-align:center;
-			   }
-			  .s{
-			   display:inline-block;
-			   text-align:center;
-			   margin:4% 4%;
-			   border-bottom:2px dotted black;
-			   border-radius:5%;
-			   font-size:20px;
-			  
-			   }
-			  .s1{
-			   text-align:center;
-			   padding-left:10px;
-			   font-size:20px;
-			   }
-			  #connect{
-			   text-align:center;
-			   font-size:20px;
-			   border-bottom:2px dotted black;
-			   }
-			  #con{
-		     background-color: #0093E9;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
-			   }
-			
-        @media only screen and (max-width:760px){
-		 #title {
-		    font-size:20px;
-			padding-left:40px;
-			
-			  }
-       .checkbtn{
-	    display:block;
-		padding-right:30px;
-		font-size:17px;
-		   }
-       #menu {
-            position:absolute;
-		  width:100%;
-		  height:700vh;
-		  background:#2c3e50;
-		  top:80px;
-		  left:-100%;
-		  text-align:center;
-		  transition:all 0.5s;
-		  z-index:+1;
-		  }
-		  
-	nav ul li {
-	  
-	   display: block;
-	   
-		  }
-    nav ul li a {
-	   
-	    font-size:20px;
-		 }
-	
-
-	  
-	  #check:checked ~ul{
-	     left:0;
-		  }
-	  #welcome{
-	
-       height:30%;
-	  
-		      }
-	  #kuet{
-		  
-		  font-size:17px;
-		  }
-		  #kbme {
-		   
-		   font-size:30px;
-		
-		   }
-		  
-		   #k1{
-		  font-size:17px;
-		     }
-		  
-		  #e{
-		   display:none;
-		    }
-		 iframe{
-		  height:520px;
-		  width:300px;
-		 
-		 }
-		 
-		 .note{
-          font-family: 'Luckiest Guy', cursive;
-		    font-size:30px;
-			opacity:100%;
-			margin-left:40px;
-			padding-bottom:70px;
-		 }
-		
-		 .card-section{
-		 padding-left:25px;
-		 text-align:center;
-		   }
-		 
-		 
-		 
-        
-   
-   
-      
-   
-   }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  </style>
- 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+               <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <title>Hello, BME!</title>
 </head>
 
 <body>
-<nav> 
- <input type="checkbox" id="check">
- <label for="check" class="checkbtn">
-    <b>Menu</b>
- </label>
- <label id="title">KBME-19</label>
-   <ul id="menu">
-     <li><a href="#index">home</a></li>
-	 
-     <li><a href="Physics.html">Physics</a></li>
-     <li><a href="#index">Chemistry</a></li>
-     <li><a href="#index">Math</a></li>
-     <li><a href="#index">Biomedical</a></li>
-     <li><a href="#index">Practical</a></li>
-     <li><a href="bot.html">Bot</a></li> 
-	 
-     <li><a href="#index">About US</a></li>
-	
-   </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="https://www.kuet.ac.bd/">KBME19</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Important Files</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
+      <div class="container-fluid  main">
+
+        
+
+        <div class="background">
+            <h3 class="bme1">BME 2k19</h3>
+            <h4 class="bme2">khulna University of Engineering and technology</h4>
+        </div>
+      <br><br><br><br>
+
+      <div class="welcome">
+        <marquee width="100%" direction="left" height="100px">
+                Welcome Dear BME,KUET-2k20 Batch.
+            </marquee>
+      </div>
+      <br><br><br>
+
+      <div class="story">
+          <h2 align="center">A Sweet Story </h2>
+          <p>We BME,KUET-2k19 started our journey in January,2020.After continuing physical class for two
+              months We had to leave our dearest campus for covid pandemic.Then online era came and We
+              continued our classes.When its about batchmate bonding ,maybe we are an example.There are 29 souls,
+              each one cares about others.We are dedicated to our subjects and devoted to our teachers and seniors.
+              Maybe our juniors will find us very helpful.Take love everyone.
+              
+          </p>
+      </div>
      
-</nav>  
-     
-   <div id="welcome"><p class="note"> Welcome To Biomedical Engineering
-                    </br> Batch-2k19</p>
+      <br><br><br>
+          
+      <div class="row" align="center" style="height:100%;">
 
-    </div>
-	<h1 id="kbme">KUET Biomedical ENGINEERING </h1>
- 
- <p id="kuet" style="text-align:left">Kuet is one of the best university in Bangladesh with promising Faculty members ,staffs and hard-working talented students.
-    Kuet is the pioneer of Biomedical Science and Engineering in Bangladesh.Kuet Biomedical Engineering Department starts their
-	under-graduation programme from 2014.Kuet Biomedical Engineering proviodes best education on biomedical science and applications.
-    </p></br>
+         
 
- <h1 align="center" id="k">  KUET BME'19 </h1></br>
- <p id="k1">Kuet BME batch-2K19 is the fresher batch of the department .They have 29 Members in a single section.All of 
-     them are promising and patron to their department though they have different backgrounds,origins,choices and 
-	 life-styles. The Batch CR is Mr.Ozayer is  efficient in batch-leading and Mr.Sudeep,elected as ACR is also perfect in  
-     in his own job.Mr.Safin is the batch co-ordinator,is very perfect in co-ordinating whole batch-2k19.BME Batch 2k19 is attached in
-	 Dr.M.A.Rashid Hall.</p></br>
-<h2 id="teacher">Our Respected BTeachers</h2></br></br>
-  <div id="car">
-   <section class="card-section">
-    <div class="row">
-	  <div class="col-lg-4" >
 
-           <div class="card" style="width: 18rem;">
-  <img src="anik.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Anik Ghosh</h5>
-    <p class="card-text">Subject:Introduction to Biomedical Engineering</br>
-Lecturer,</br>Department of Biomedical Engineering</p>
-    <a href="#anik dada" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	 <div class="col-lg-4">
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="prottay.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="prottoy.html"><h6 style="font-size: 16px; margin-left: 0px;">Prottay Biswas</h6></a></b> </h5>
+              <h6>1915001</h6>
+              <h6>01521584482</h6>
+              <h6>probisndc19@gmail.com </h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
 
-           <div class="card" style="width: 18rem;">
-  <img src="deba.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Debasish Kumar Saha</h5>
-    <p class="card-text">Subject:Introduction to Biomedical Engineering</br>Assistant Professor,Department of Biomedical Engineering</p>
-    <a href="http://www.kuet.ac.bd/bme/debasish/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	
-	 <div class="col-lg-4">
 
-           <div class="card" style="width: 18rem;">
-  <img src="ashra.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dr. Md. Asraful Alom</h5>
-    <p class="card-text">Subject:Integration</br>Assistant Professor</br>Department Of Mathematics</p>
-    <a href="http://kuet.ac.bd/math/asraful/" class="btn btn-primary">Learn More </a>
-  </div>
-</div>
- 
-    </div>
-	    </div>
-		<div class="row">
-	  <div class="col-lg-4">
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="prapti.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href=""><h6 style="font-size: 16px; margin-left: 0px;">Afifa Halim Prapti</h6></a></b> </h5>
+              <h6>1915002</h6>
+              <h6>01xxxxxxx </h6>
+              <h6>xD@gmail.com</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
 
-           <div class="card" style="width: 18rem;">
-  <img src="ashis.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ashish Barmon</h5>
-    <p class="card-text">Assistant Professor</br>Department Of Mathematics</p>
-    <a href="http://www.kuet.ac.bd/math/ashishbarmon/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	 <div class="col-lg-4">
 
-           <div class="card" style="width: 18rem;">
-  <img src="271_2012-10-07_1349587373.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dr. Md. Jahirul Islam</h5>
-    <p class="card-text">Associate Professor</br>
-Department of Electrical and Electronic Engineering</p>
-    <a href="http://www.kuet.ac.bd/eee/jahirul/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	 <div class="col-lg-4">
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="kul.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="kul.html"><h6 style="font-size: 16px; margin-left: 0px;">Kul Deep Dutta</h6></a></b> </h5>
+              <h6>1915003</h6>
+              <h6>01627303589</h6>
+              <h6>dutta1915003@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
 
-           <div class="card" style="width: 18rem;">
-  <img src="anik.jpg" class="card-img-top" alt="anamul sir">
-  <div class="card-body">
-    <h5 class="card-title">A. N. M. Enamul Kabir</h5>
-    <p class="card-text">Professor</br>Department Of Electrical and Electronic Engineering</p>
-    <a href="" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	    </div>
-		<div class="row">
-	  <div class="col-lg-4">
 
-           <div class="card" style="width: 18rem;">
-  <img src="Mamun.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dr. A. B. M. Mamun Jamal</h5>
-    <p class="card-text">Subject:Nuclear And Crystal Chemistry</br>Assistant Professor</br>Department Of Chemistry</p>
-    <a href="http://www.kuet.ac.bd/chem/mamunjamal/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	 <div class="col-lg-4">
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="onto.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="ontu.html"><h6 style="font-size: 16px; margin-left: 0px;">Anandita Deb Antu  </h6></a></b> </h5>
+              <h6>1915004</h6>
+              <h6>01679569066</h6>
+              <h6>antu1915004@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
 
-           <div class="card" style="width: 18rem;">
-  <img src="maniru.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dr. Md. Maniruzzaman</h5>
-    <p class="card-text">Subject:Electro-Chemistry</br>Assistant Professor</br>Department Of Chemistry</p>
-    <a href="http://www.kuet.ac.bd/chem/maniruzzaman/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	 <div class="col-lg-4">
 
-           <div class="card" style="width: 18rem;">
-  <img src="jolly.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Dr. Jolly Sultana</h5>
-    <p class="card-text">Subject:Modern Physics</br>Professor</br>Department Of Physics</p>
-    <a id="jolly" href="http://www.kuet.ac.bd/phy/sjolly/" class="btn btn-primary">Learn More</a>
-  </div>
-</div>
- 
-    </div>
-	    </div>
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="trisha.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="maisa.html"><h6 style="font-size: 16px; margin-left: 0px;">Maysha Rahman Trisha</h6></a></b> </h5>
+              <h6>1915005</h6>
+              <h6>01764813202</h6>
+              <h6>trisha1915005@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
 
-  </section></div></br></br>
-  <div id="con">
-<h2 id="connect"><b><i> CONNECTING WITH US</i></b></h2></br>
-   <div id="wrapper">
-    <div id="media">
-	 <ul id="med">
-       
-	   <div class="s">
-	   <li class="med"><i class="fa fa-globe" aria-hidden="true"></i>
-</li><li class="med1"><a href="#"   style="color:white;font-weight:bold;">kuet</br>main</a></li></div>
-	  
-<div class="s">
-	  <li class="med"><i class="fa fa-globe" aria-hidden="true"></i>
-</li><li class="med1"><a href="#" style="color:white;font-weight:bold;">kuet</br>bme</a></li></div>
-	   
-	   <div class="s">
-	   <li class="med"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-</li><li class="med1"><a href="#" style="color:white;font-weight:bold;">Current</br>batch</a></li></div>
-	   
-	   <div class="s">
-	   <li class="med"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-</li><li class="med1"><a href="#" style="color:white;font-weight:bold;">all</br>batch</a></li></div>
-	   
-	</br>   <div class="s1">
-	   <li class="med"><i class="fa fa-envelope" aria-hidden="true"></i>
-        <p style="color:white;display:inline-block;">bme2k19.kuet@gmail.com</p></div>
- 
- 
- 
- 
-    </ul>
-    </div>
-  </div></br>
- 
- <h2 class="contact">Hey!Write To Us </h2>
- <h4 class="contact">we are ready for serving</h4>
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="safin.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="safin.html"><h6 style="font-size: 16px; margin-left: 0px;">Md Anawarul Azim Safin </h6></a></b> </h5>
+              <h6>1915006</h6>
+              <h6>01627312873</h6>
+              <h6>safin1915006@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
+
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="ahona.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="ahona.html"><h6 style="font-size: 16px; margin-left: 0px;">Effat Mahajabin Ahona </h6></a></b> </h5>
+              <h6>1915007</h6>
+              <h6>01708920512</h6>
+              <h6>ahona1915007@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
+
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="likhon.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="likhon.html"><h6 style="font-size: 16px; margin-left: 0px;">Md. Rokibul Islam Likhon</h6></a></b> </h5>
+              <h6>1915008</h6>
+              <h6>01305899530</h6>
+              <h6>likhon1915008@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
+
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="mim.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="mim.html"><h6 style="font-size: 16px; margin-left: 0px;">Suraiya Binta Zaman</h6></a></b> </h5>
+              <h6>1915009</h6>
+              <h6>01988969955</h6>
+              <h6>suraiyamim5648@gmail.com</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+    
+    
+
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="col-sm-3 col-xs-3">      
+            <img src="nur.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+            </div>
+            <div class="col-sm-9 col-xs-9">    
+              <h5><b><a href="nur.html"><h6 style="font-size: 16px; margin-left: 0px;">MD NUR E ALAM</h6></a></b> </h5>
+              <h6>1915010</h6>
+              <h6>01301914537</h6>
+              <h6>alam1915010@stud.kuet.ac.bd</h6>
+              <h6>Hometown   </h6>
+            </div>
+            </div>
+         
    
-   
-   
-   
-   
-   <div id="contact-form">
-   
-   <div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/118357331189764453013/form/1FAIpQLSep-LTCxxXj8gRdiXNtaeNZfCoZ7vKhllHOvSFcjXcJH4dGtw/classic.js?div=ff-compose"></script>
-   </div></div>
- 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+         
+
+
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="shreya.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="shreya.html"><h6 style="font-size: 16px; margin-left: 0px;">Shreya sarker </h6></a></b> </h5>
+                      <h6>1915011</h6>
+                      <h6>01778800479</h6>
+                      <h6>shreyadristy@gmail.com</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="mrittika.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="anika.html"><h6 style="font-size: 16px; margin-left: 0px;">Mrittika Hossain Anika</h6></a></b> </h5>
+                      <h6>1915012</h6>
+                      <h6>01689765340</h6>
+                      <h6>mrittikahossain17@gmail.com</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="sudeep.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="sudeep.html"><h6 style="font-size: 16px; margin-left: 0px;">Sudeep Paul</h6></a></b> </h5>
+                      <h6>1915013</h6>
+                      <h6>01521584515</h6>
+                      <h6>paul1915013@stud.kuet.ac.bd</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="tayeba.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="#"><h6 style="font-size: 16px; margin-left: 0px;">Tayyeba Binte hayder</h6></a></b> </h5>
+                      <h6>1915014</h6>
+                      <h6>xDxD</h6>
+                      <h6>xDxD</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="tausif.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="tausif.html"><h6 style="font-size: 16px; margin-left: 0px;">Tasnimul Hasan</h6></a></b> </h5>
+                      <h6>1915015</h6>
+                      <h6>01537051441</h6>
+                      <h6>ffffnatzi@gmail.com</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="zakia.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="zakia.html"><h6 style="font-size: 16px; margin-left: 0px;">Mst. Zakia Sultana</h6></a></b> </h5>
+                      <h6>1915016</h6>
+                      <h6>01865912763</h6>
+                      <h6>sultana1915016@stud.kuet.ac.bd</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="maruf.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="maruf.html"><h6 style="font-size: 16px; margin-left: 0px;">Md Maruf Chowdhury Dipto   </h6></a></b> </h5>
+                      <h6>1915017</h6>
+                      <h6>01723256602</h6>
+                      <h6>mdmarufchowdhury2@gmail.com</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="ozayer.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="ozayer.html"><h6 style="font-size: 16px; margin-left: 0px;">MOHAMMAD OZAYER BIN RAFIQUE</h6></a></b> </h5>
+                      <h6>1915018</h6>
+                      <h6>01999651855</h6>
+                      <h6>rafique1915018@stud.kuet.ac.bd</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="munna.jpg" class="img-thumbnail" alt="studnet" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="munna.html"><h6 style="font-size: 16px; margin-left: 0px;">Md. Minhajul Abedeen Munna </h6></a></b> </h5>
+                      <h6>1915019</h6>
+                      <h6>01311873878</h6>
+                      <h6>minhajulabedeen9@gmail.com</h6>
+                      <h6>Hometown   </h6>
+
+                    </div>
+                    </div>
+            
+            
+    
+    
+                <div class="col-sm-6 col-xs-12">
+                  <div class="col-sm-3 col-xs-3">      
+                    <img src="fahim.jpg" class="img-thumbnail" alt="student" width="100" height="100">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">    
+                      <h5><b><a href="fahim.html"><h6 style="font-size: 16px; margin-left: 0px;">fahim1915021@stud.kuet.ac</h6></a></b> </h5>
+                      <h6>1915021</h6>
+                      <h6>01780171508</h6>
+                      <h6>fahim1915021@stud.kuet.ac</h6>
+                      <h6>Hometown   </h6>
+                    </div>
+                    </div>
+            
+          
+                    
+
+         
+
+
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/nopic.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/mmi/"><h6 style="font-size: 16px; margin-left: 0px;">Dr. Muhammad Muinul Islam</h6></a></b> </h5>
+                              <h6>Associate Professor</h6>
+                              <h6>+880-41-769468-75, Ext. 8881</h6>
+                              <h6>mmi@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/933_2014-10-20_1413778344.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/bashir/"><h6 style="font-size: 16px; margin-left: 0px;">Dr. Md. Bashir Uddin</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6> </h6>
+                              <h6>mbu@bme.kuet.ac.bd, bas.u.kuet@gmail.com</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/3490_2016-01-04_1451883786.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/mahmud_bme/"><h6 style="font-size: 16px; margin-left: 0px;">Dr. G.M. Mahmudur Rahman</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6>+880-41-769468-75, Ext-8885</h6>
+                              <h6>dtuhin28@yahoo.com,mahmud@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/3667_06072017_14483638433.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/nasrinakter"><h6 style="font-size: 16px; margin-left: 0px;">Dr. Nasrin Akhter</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6>+880-41-769468-75, Ext. 8887</h6>
+                              <h6>nasrin_dr@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/3251_2015-11-30_1448865466.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/debasish/"><h6 style="font-size: 16px; margin-left: 0px;">Dabasish Kumar Saha (On Leave)</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6>+880-41-769468-75, Ext-8883</h6>
+                              <h6>debasish.saha18@yahoo.com</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/rushi_zahid_rusho_kuet_biomedical.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/rushdi"><h6 style="font-size: 16px; margin-left: 0px;">Rushdi Zahid Rusho (On Leave)</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6></h6>
+                              <h6>rushdizahid@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/jubair_ahmed_ratan.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/zubairahmed/"><h6 style="font-size: 16px; margin-left: 0px;">Dr. Zubair Ahmed Ratan (On Leave)</h6></a></b> </h5>
+                              <h6>Assistant Professor</h6>
+                              <h6></h6>
+                              <h6>zubairahmed@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/Anik_Ghosh_09_09_2021.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="#"><h6 style="font-size: 16px; margin-left: 0px;">Anik Ghosh</h6></a></b> </h5>
+                              <h6>Lecturer</h6>
+                              <h6>+880-41-769468-75, Ext-8889</h6>
+                              <h6>anikghosh@bme.kuet.ac.bd, anikghosh348@gmail.com</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/nopic.jpg" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/ferdwushee/"><h6 style="font-size: 16px; margin-left: 0px;">Kazi Zannatul Ferdwushee</h6></a></b> </h5>
+                              <h6>Lecturer</h6>
+                              <h6>+880-41-769468-75, Ext-8893</h6>
+                              <h6>ferdwushee@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+                    
+            
+            
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="col-sm-3 col-xs-3">      
+                            <img src="https://www.kuet.ac.bd/department/BME/images/faculty/Md_Abu_Shahid_Chowdhury_2021.JPG" class="img-thumbnail" alt="fmember" width="100" height="100">
+                            </div>
+                            <div class="col-sm-9 col-xs-9">    
+                              <h5><b><a href="/bme/shahid_bme/"><h6 style="font-size: 16px; margin-left: 0px;">Md. Abu Shahid Chowdhury</h6></a></b> </h5>
+                              <h6>Lecturer</h6>
+                              <h6>+88041-769468 ~ 75 Ext- 8891</h6>
+                              <h6>shahid@bme.kuet.ac.bd</h6>
+                            </div>
+                            </div>
+                    
+         </div>
+         <br><br><br>
+        
+         
+         
+         
+         <footer id="footer" class="footer-1" width="100%">
+         <div class="main-footer widgets-dark typo-light">
+         <div class="container">
+         <div class="row">
+         
+           <div class="col-xs-12 col-sm-6 col-md-3">
+         <div class="widget subscribe no-box">
+         <h5 class="widget-title">KUET BME 19<span></span></h5>
+         <p>An academic student group who are trying to be a prominent biomedical engineer.. </p>
+         </div>
+         </div>
+         
+           
+         <div class="col-xs-12 col-sm-6 col-md-3">
+         <div class="widget no-box">
+         <h5 class="widget-title">Quick Links<span></span></h5>
+         <ul class="thumbnail-widget">
+         <li>
+         <div class="thumb-content"><a href="https://www.kuet.ac.bd/">&nbsp;Get Started</a></div> 
+         </li>
+         <li>
+         <div class="thumb-content"><a href="https://www.kuet.ac.bd/">&nbsp;Top Leaders</a></div> 
+         </li>
+         <li>
+         </ul>
+         </div>
+         </div>
+         
+           
+         
+               <div class="col-xs-12 col-sm-6 col-md-3">
+         <div class="widget no-box">
+         <h5 class="widget-title">Follow up<span></span></h5>
+                     <a href="#"> <i class="fa fa-facebook"> </i> </a>
+                     <a href="#"> <i class="fa fa-twitter"> </i> </a>
+                     <a href="#"> <i class="fa fa-youtube"> </i> </a>
+         </div>
+         </div>
+         <br>
+           <br>
+         
+         
+         <div class="col-xs-12 col-sm-6 col-md-3">
+         <div class="widget no-box">
+         <h5 class="widget-title">Contact Us<span></span></h5>
+                     
+           <div class="emailfield">
+         <input type="text" name="email" value="Email">
+         <input name="uri" type="hidden" value="arabiantheme">
+         <input name="loc" type="hidden" value="en_US">
+         <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+         </form>  
+         </div>
+         </div>
+         
+         </div>
+         </div>
+         </div>
+           
+         <div class="footer-copyright">
+         <div class="container">
+         <div class="row">
+         <div class="col-md-12 text-center">
+         <p>Copyright Design Kuet Bme 19 © 2021.<br> All rights reserved.</p>
+         </div>
+         </div>
+         </div>
+         </div>
+         </footer>
+        
+        </div>
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
-
 
 </html>
