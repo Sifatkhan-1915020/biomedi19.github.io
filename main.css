@@ -13,7 +13,7 @@ body {
 
 .background{
     overflow-x: hidden;
-    background-image: linear-gradient(rgba(59, 58, 58, 0.527),rgba(0, 0, 0, 0.5)) , url("bg.jpg"); /* The image used */
+    background-image: linear-gradient(rgba(59, 58, 58, 0.527),rgba(0, 0, 0, 0.5)) , url("1.jpg"); /* The image used */
         background-color: #dd9696; /* Used if the image is unavailable */
         height: 400px; /* You must set a specified height */
         background-position: center center fixed; /* Center the image */
@@ -235,4 +235,43 @@ background: linear-gradient(to right, #d2dce0cc, #87e4b88a);  /* Chrome 10-25, S
 
 
 }
+
+@media only screen and (orientation: landscape) {
+    .background{
+        overflow-x: hidden;
+        background-image: linear-gradient(rgba(59, 58, 58, 0.527),rgba(0, 0, 0, 0.5)) , url("1.jpg"); /* The image used */
+            background-color: #dd9696; /* Used if the image is unavailable */
+            height: 800px; /* You must set a specified height */
+            background-position: center center fixed; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+           position: relative;
+    }
+    
+    .bme2{
+        position: absolute;
+        
+        box-sizing: content;
+        top:150px;
+        text-align:center;
+        justify-content: center;
+        
+        font-family: serif;
+        color:white;
+        margin: 0 0;
+        padding: 10 10;
+    }
+    
+    .story p{
+        text-align:justify;
+        font-family:sans-serif;
+        color:rgb(63, 55, 55);
+        text-decoration: rgb(247, 248, 248);
+        font-size:18px;
+        
+    }
+    
+    
+    
+  }
 
